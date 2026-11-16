@@ -39,8 +39,9 @@ Most system design examples stop at "add a load balancer". This one shows what a
 | **Domain-Driven Design** | 7 | Subdomains, context map, aggregates (commerce, inventory, payroll), ubiquitous language, hexagonal service anatomy |
 | **Event-Driven Architecture** | 6 | Event flow map, EventStorming, choreography saga, orchestration saga, CQRS & event sourcing, messaging reliability (outbox, inbox, DLQ, replay) |
 | **AI customer support** | 15 | C4 context & container, agent + sub-agent architecture, Azure deployment, RAG pipeline, prompt & context engineering, MCP tools, guardrails, OWASP LLM Top 10, fallback / retry / circuit breaker, observability & evaluation, harvesting & self-learning, conversation flow, BPMN, ERD |
+| **Evolution & offline consistency** | 13 | What broke at each version change (v1→v2→v3→v4→v5), what stays a monolith, why AI agents came last; offline sync protocol, conflict matrix, till connectivity states, stock ledger, offline tenders & loyalty double-spend, IDs & idempotent apply |
 
-**Total: 4 + 7 + 19 + 12 + 20 + 13 + 14 + 7 + 6 + 15 = 117 pages.**
+**Total: 4 + 7 + 19 + 12 + 20 + 13 + 14 + 7 + 6 + 15 + 13 = 130 pages.** The 13 evolution pages are in `pos-evolution/POS-Evolution-and-Offline-Consistency.drawio`.
 
 ---
 
@@ -109,6 +110,12 @@ Most system design examples stop at "add a load balancer". This one shows what a
 <summary><b>AI customer support – Support Copilot (15)</b></summary>
 
 `AI Context` · `AI Container` · `AI Agent Architecture` · `AI Deployment` · `AI RAG Pipeline` · `AI Prompt & Context Enginnering` · `AI MCP Tools` · `AI Guardrails` · `AI OWASP` · `AI Resilience` · `AI Observability` · `AI Harvesting & self-learning` · `AI Support Conversation Flow` · `BPM AI-Assisted Support Case` · `AI ERD`
+</details>
+
+<details>
+<summary><b>Evolution &amp; offline consistency (13)</b></summary>
+
+`EVO-01` version timeline: what each version kept and what broke · `EVO-02` v1 → v2 · `EVO-03` v2 → v3 (why multi-tenant) · `EVO-04` v3 → v4 · `EVO-05` v4 → v5 · `EVO-06` what stays a monolith · `EVO-07` why AI agents come last · `OFF-01` sync protocol sequence · `OFF-02` conflict-resolution matrix · `OFF-03` till connectivity state machine · `OFF-04` stock ledger vs quantity overwrite · `OFF-05` offline tenders and loyalty double-spend · `OFF-06` IDs, ordering and idempotent apply
 </details>
 
 ---
