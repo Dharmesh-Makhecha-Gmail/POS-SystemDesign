@@ -1,0 +1,272 @@
+<mxGraphModel dx="1920" dy="1260" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1260" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- ===================== TITLE + FRAME ===================== -->
+    <mxCell id="title" value="v4 → v5 · From one shared back office to services per bounded context on Azure" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontColor=#1A1A1A;fontSize=26;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="100" y="14" width="1720" height="44" as="geometry" />
+    </mxCell>
+    <mxCell id="frame" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#BBBBBB;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="10" y="70" width="1900" height="1180" as="geometry" />
+    </mxCell>
+
+    <!-- ===================== A · BEFORE -> AFTER ===================== -->
+    <mxCell id="bA" value="" style="rounded=1;arcSize=1;whiteSpace=wrap;html=1;fillColor=#FDFDFD;strokeColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="22" y="84" width="1876" height="300" as="geometry" />
+    </mxCell>
+    <mxCell id="bA_t" value="A · Before → After" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#333333;fontSize=13;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="34" y="92" width="1852" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="bef" value="" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#FFF8F0;strokeColor=#D9822B;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="40" y="124" width="780" height="244" as="geometry" />
+    </mxCell>
+    <mxCell id="bef_tag" value="v4 · one back-office deployable, one shared database" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#BBBBBB;fontColor=#1A1A1A;fontSize=11;fontStyle=1;align=left;spacingLeft=26;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="50" y="134" width="466.4" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="bef_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiNEOTgyMkIiLz48cmVjdCB4PSIxMiIgeT0iMTIiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcng9IjMiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik0xMiAzMmg0ME0zMiAxMnY0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjIuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+;" vertex="1" parent="1">
+      <mxGeometry x="55" y="137" width="20" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="bm0" value="Catalogue" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#FCEBD9;strokeColor=#D9822B;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="60" y="172" width="172" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="bm1" value="Orders" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#FCEBD9;strokeColor=#D9822B;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="246" y="172" width="172" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="bm2" value="Payments" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#FCEBD9;strokeColor=#D9822B;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="432" y="172" width="172" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="bm3" value="Partners" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#FCEBD9;strokeColor=#D9822B;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="618" y="172" width="172" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="bm4" value="Sync" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#FCEBD9;strokeColor=#D9822B;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="60" y="218" width="172" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="bm5" value="Payroll" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#FCEBD9;strokeColor=#D9822B;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="246" y="218" width="172" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="bm6" value="Reporting" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#FCEBD9;strokeColor=#D9822B;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="432" y="218" width="172" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="bm7" value="Tenant admin" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#FCEBD9;strokeColor=#D9822B;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="618" y="218" width="172" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="bdb" value="Shared database&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:10px;color:#444444&quot;&gt;sharded by tenant · every module reads and writes every table&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FCEBD9;strokeColor=#D9822B;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="60" y="274" width="740" height="76" as="geometry" />
+    </mxCell>
+    <mxCell id="bdb_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiNEOTgyMkIiLz48ZWxsaXBzZSBjeD0iMzIiIGN5PSIyMCIgcng9IjE0IiByeT0iNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTE4IDIwdjI0YTE0IDUgMCAwIDAgMjggMFYyMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTE4IDMyYTE0IDUgMCAwIDAgMjggMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+;" vertex="1" parent="1">
+      <mxGeometry x="67" y="301.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="aft" value="" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;fillColor=#F8F6FE;strokeColor=#7A6BD6;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="980" y="124" width="900" height="244" as="geometry" />
+    </mxCell>
+    <mxCell id="aft_tag" value="v5 · services per bounded context on AKS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#BBBBBB;fontColor=#1A1A1A;fontSize=11;fontStyle=1;align=left;spacingLeft=26;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="990" y="134" width="368.0" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="aft_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiM3QTZCRDYiLz48cGF0aCBkPSJNMzIgMTJsMTggOXYyMmwtMTggOS0xOC05VjIxeiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTE0IDIxbDE4IDkgMTgtOU0zMiAzMHYyMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+;" vertex="1" parent="1">
+      <mxGeometry x="995" y="137" width="20" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="am0" value="Catalogue svc" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#ECE9FB;strokeColor=#7A6BD6;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1000" y="172" width="204" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="am1" value="Order svc" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#ECE9FB;strokeColor=#7A6BD6;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1218" y="172" width="204" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="am2" value="Payments svc · PCI" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#ECE9FB;strokeColor=#7A6BD6;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1436" y="172" width="204" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="am3" value="Partner adapters" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#ECE9FB;strokeColor=#7A6BD6;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1654" y="172" width="204" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="am4" value="Sync API" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#ECE9FB;strokeColor=#7A6BD6;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1000" y="218" width="204" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="am5" value="Payroll &amp; attendance" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#ECE9FB;strokeColor=#7A6BD6;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1218" y="218" width="204" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="am6" value="Reporting" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#ECE9FB;strokeColor=#7A6BD6;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1436" y="218" width="204" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="am7" value="Identity / tenant" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#ECE9FB;strokeColor=#7A6BD6;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1654" y="218" width="204" height="36" as="geometry" />
+    </mxCell>
+    <mxCell id="abus" value="Service Bus / Event Hubs&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:10px;color:#444444&quot;&gt;each service owns its DB · changes leave through the outbox, arrive through an inbox&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E3F4F1;strokeColor=#1F8A7A;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1000" y="274" width="860" height="76" as="geometry" />
+    </mxCell>
+    <mxCell id="abus_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMxRjhBN0EiLz48cGF0aCBkPSJNMTAgMjRoNDRNMTAgNDBoNDQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxjaXJjbGUgY3g9IjIwIiBjeT0iMzIiIHI9IjQiIGZpbGw9IiNGRkZGRkYiLz48Y2lyY2xlIGN4PSIzMiIgY3k9IjMyIiByPSI0IiBmaWxsPSIjRkZGRkZGIi8+PGNpcmNsZSBjeD0iNDQiIGN5PSIzMiIgcj0iNCIgZmlsbD0iI0ZGRkZGRiIvPjwvc3ZnPg==;" vertex="1" parent="1">
+      <mxGeometry x="1007" y="301.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="eBA" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=2.2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="bef" target="aft">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="lBA" value="split along&lt;br&gt;team + scaling&lt;br&gt;seams" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="826" y="176" width="148" height="54" as="geometry" />
+    </mxCell>
+
+    <!-- ===================== B · FORCES -> DECISION -> RESULT ===================== -->
+    <mxCell id="bB" value="" style="rounded=1;arcSize=1;whiteSpace=wrap;html=1;fillColor=#FDFDFD;strokeColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="22" y="400" width="1876" height="660" as="geometry" />
+    </mxCell>
+    <mxCell id="bB_t" value="B · Forces → Decision → Result" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#333333;fontSize=13;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="34" y="408" width="1852" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="hF" value="Force (what hurt in v4)" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=2;fontColor=#1A1A1A;fontSize=13;fontStyle=1;spacingLeft=30;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="440" width="580" height="34" as="geometry" />
+    </mxCell>
+    <mxCell id="hF_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiNDOTQ1NDUiLz48cGF0aCBkPSJNMTQgMThoMTZsLTQgMTAgOCA2LTQgMTJIMTR6IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMzggMThoMTJ2MjhIMzRsNC0xMi04LTZ6IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=;" vertex="1" parent="1">
+      <mxGeometry x="48" y="446" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="hD" value="Decision in v5" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=2;fontColor=#1A1A1A;fontSize=13;fontStyle=1;spacingLeft=30;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="680" y="440" width="620" height="34" as="geometry" />
+    </mxCell>
+    <mxCell id="hD_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMzQjZGRDYiLz48cmVjdCB4PSIxMCIgeT0iMTIiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgcng9IjIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxyZWN0IHg9IjM2IiB5PSIxMiIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE4IiByeD0iMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHJlY3QgeD0iMTAiIHk9IjM2IiB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHJ4PSIyIiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cmVjdCB4PSIzNiIgeT0iMzYiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgcng9IjIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==;" vertex="1" parent="1">
+      <mxGeometry x="688" y="446" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="hR" value="Result" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#E2F4E4;strokeColor=#2E9E3E;strokeWidth=2;fontColor=#1A1A1A;fontSize=13;fontStyle=1;spacingLeft=30;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1360" y="440" width="520" height="34" as="geometry" />
+    </mxCell>
+    <mxCell id="hR_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMyRTlFM0UiLz48cGF0aCBkPSJNMTIgNDBsMTAtMTAgOCA4IDE2LTE4IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNNDAgMjBoOHY4IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=;" vertex="1" parent="1">
+      <mxGeometry x="1368" y="446" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="f0" value="One codebase, many teams&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:11px;margin-top:4px&quot;&gt;Catalogue, payments, partners and HR teams queue behind one release.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="486" width="580" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="d0" value="Services per bounded context on AKS&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:11px;margin-top:4px&quot;&gt;One team owns each service, its code, DB and pipeline.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="680" y="486" width="620" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="r0" value="Teams ship independently&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:11px;margin-top:4px&quot;&gt;No release train; a change touches one service.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#E2F4E4;strokeColor=#2E9E3E;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1360" y="486" width="520" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="eF0" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#C94545;strokeWidth=1.6;dashed=1;dashPattern=8 5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="f0" target="d0">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="eD0" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=1.6;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="d0" target="r0">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="f1" value="Payments in PCI scope&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:11px;margin-top:4px&quot;&gt;Card data paths ran through the shared deployable, so all of it was in scope.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="566" width="580" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="d1" value="Payments service isolated&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:11px;margin-top:4px&quot;&gt;Own namespace, own DB, network policies, tokenised cards only.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="680" y="566" width="620" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="r1" value="PCI scope shrinks&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:11px;margin-top:4px&quot;&gt;Audit covers one service, not the whole back office.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#E2F4E4;strokeColor=#2E9E3E;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1360" y="566" width="520" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="eF1" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#C94545;strokeWidth=1.6;dashed=1;dashPattern=8 5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="f1" target="d1">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="eD1" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=1.6;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="d1" target="r1">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="f2" value="Volatile partner APIs&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:11px;margin-top:4px&quot;&gt;DoorDash, Uber Eats and gateway changes forced full redeploys.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="646" width="580" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="d2" value="Partner adapter services&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:11px;margin-top:4px&quot;&gt;Anti-corruption layer, signed webhooks in, outbox events out.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="680" y="646" width="620" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="r2" value="Partner changes stay local&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:11px;margin-top:4px&quot;&gt;A partner API change touches one adapter.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#E2F4E4;strokeColor=#2E9E3E;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1360" y="646" width="520" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="eF2" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#C94545;strokeWidth=1.6;dashed=1;dashPattern=8 5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="f2" target="d2">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="eD2" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=1.6;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="d2" target="r2">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="f3" value="Sync spikes at open / close&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:11px;margin-top:4px&quot;&gt;Every till pushes and pulls at 9 am and at close; the back office slowed.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="726" width="580" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="d3" value="Sync API scales on its own&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:11px;margin-top:4px&quot;&gt;KEDA on queue depth; inbox makes repeated pushes safe.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="680" y="726" width="620" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="r3" value="Spikes don't slow staff&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:11px;margin-top:4px&quot;&gt;Back office stays fast during store open.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#E2F4E4;strokeColor=#2E9E3E;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1360" y="726" width="520" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="eF3" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#C94545;strokeWidth=1.6;dashed=1;dashPattern=8 5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="f3" target="d3">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="eD3" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=1.6;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="d3" target="r3">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="f4" value="Payroll month-end batch&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:11px;margin-top:4px&quot;&gt;Batch jobs locked shared tables during sales hours.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="806" width="580" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="d4" value="Payroll service + own DB&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:11px;margin-top:4px&quot;&gt;Attendance events feed it; batch runs on separate nodes.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="680" y="806" width="620" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="r4" value="Batch isolated from sales&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:11px;margin-top:4px&quot;&gt;No table locks on the sales path.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#E2F4E4;strokeColor=#2E9E3E;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1360" y="806" width="520" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="eF4" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#C94545;strokeWidth=1.6;dashed=1;dashPattern=8 5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="f4" target="d4">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="eD4" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=1.6;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="d4" target="r4">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="f5" value="One bad deploy hit everything&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:11px;margin-top:4px&quot;&gt;A reporting bug took down order capture too.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="886" width="580" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="d5" value="Pipeline per service in Azure DevOps&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:11px;margin-top:4px&quot;&gt;Canary + automatic rollback; OpenTelemetry traces across hops.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="680" y="886" width="620" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="r5" value="Blast radius = one service&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:11px;margin-top:4px&quot;&gt;Failures traced end to end in minutes.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#E2F4E4;strokeColor=#2E9E3E;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1360" y="886" width="520" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="eF5" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#C94545;strokeWidth=1.6;dashed=1;dashPattern=8 5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="f5" target="d5">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="eD5" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=1.6;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="d5" target="r5">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="f6" value="Scaling all for one hot path&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:11px;margin-top:4px&quot;&gt;Order capture needed 10× capacity, so all modules got 10×.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="966" width="580" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="d6" value="REST out · GraphQL BFF · gRPC in&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:11px;margin-top:4px&quot;&gt;Per-service scaling and DB per service; 4 tenancy models from the same images.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="680" y="966" width="620" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="r6" value="Pay for the hot path only&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:11px;margin-top:4px&quot;&gt;Single-tenant, on-prem, multi-tenant, hybrid: one build.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#E2F4E4;strokeColor=#2E9E3E;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1360" y="966" width="520" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="eF6" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#C94545;strokeWidth=1.6;dashed=1;dashPattern=8 5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="f6" target="d6">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="eD6" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=1.6;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="d6" target="r6">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+
+    <!-- ===================== C · KEPT + COST ===================== -->
+    <mxCell id="bC" value="" style="rounded=1;arcSize=1;whiteSpace=wrap;html=1;fillColor=#FDFDFD;strokeColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="22" y="1076" width="1876" height="160" as="geometry" />
+    </mxCell>
+    <mxCell id="bC_t" value="C · What did not change, and the price we accepted" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#333333;fontSize=13;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="34" y="1084" width="1852" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="kept" value="Not changed&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:12px;margin-top:4px&quot;&gt;The Store App stays one modular app with a local DB on the till · the offline sync protocol and its envelope · TenantID and the tenant → shard catalogue · event names (SaleCompleted, StockMoved …) became the service contracts · the domain model from v1–v4.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#E2F4E4;strokeColor=#2E9E3E;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=34;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="1116" width="900" height="100" as="geometry" />
+    </mxCell>
+    <mxCell id="kept_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMyRTlFM0UiLz48cmVjdCB4PSIxNiIgeT0iMTIiIHdpZHRoPSIzMiIgaGVpZ2h0PSI0MCIgcng9IjMiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yMyAyMmgxOE0yMyAzMWgxOE0yMyA0MGgxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+;" vertex="1" parent="1">
+      <mxGeometry x="48" y="1124" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="cost" value="Cost accepted&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:12px;margin-top:4px&quot;&gt;Distributed debugging (traces are mandatory, not optional) · eventual consistency between services (sagas, outbox, inbox) · more infrastructure to pay for and patch · a small platform team for AKS, pipelines and observability.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=34;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="980" y="1116" width="900" height="100" as="geometry" />
+    </mxCell>
+    <mxCell id="cost_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiNDOTQ1NDUiLz48cGF0aCBkPSJNMzIgMTBsMjIgNDBIMTB6IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMzIgMjZ2MTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxjaXJjbGUgY3g9IjMyIiBjeT0iNDQiIHI9IjIuNSIgZmlsbD0iI0ZGRkZGRiIvPjwvc3ZnPg==;" vertex="1" parent="1">
+      <mxGeometry x="988" y="1124" width="22" height="22" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>

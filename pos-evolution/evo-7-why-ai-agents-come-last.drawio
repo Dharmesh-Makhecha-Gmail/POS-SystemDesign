@@ -1,0 +1,109 @@
+<mxGraphModel dx="1920" dy="1080" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- ===================== TITLE + FRAME ===================== -->
+    <mxCell id="title" value="Why AI agents come last · each version laid a step the support copilot stands on" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontColor=#1A1A1A;fontSize=26;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="100" y="14" width="1720" height="44" as="geometry" />
+    </mxCell>
+    <mxCell id="frame" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#BBBBBB;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="10" y="70" width="1900" height="1000" as="geometry" />
+    </mxCell>
+    <mxCell id="bS" value="" style="rounded=1;arcSize=1;whiteSpace=wrap;html=1;fillColor=#FDFDFD;strokeColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="22" y="84" width="1876" height="970" as="geometry" />
+    </mxCell>
+    <mxCell id="bS_t" value="Prerequisites, bottom to top: the version that delivered each step, and what the agent uses it for" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#333333;fontSize=13;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="34" y="92" width="1852" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="blk0" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F1F1F1;strokeColor=#8A8A8A;strokeWidth=1.5;" vertex="1" parent="1">
+      <mxGeometry x="40" y="760" width="280" height="240" as="geometry" />
+    </mxCell>
+    <mxCell id="st0" value="v1 · Clean transactions&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:11px;margin-top:4px&quot;&gt;&lt;b&gt;Delivered:&lt;/b&gt; receipts, payments and tenders as immutable records.&lt;br&gt;&lt;br&gt;&lt;b&gt;Agent needs it for:&lt;/b&gt; the facts it cites: ‘receipt 1042 was paid by card, refund pending’.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#F1F1F1;strokeColor=#8A8A8A;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=34;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="760" width="280" height="180" as="geometry" />
+    </mxCell>
+    <mxCell id="st0_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiM4QThBOEEiLz48cmVjdCB4PSIxNiIgeT0iMTIiIHdpZHRoPSIzMiIgaGVpZ2h0PSI0MCIgcng9IjMiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yMyAyMmgxOE0yMyAzMWgxOE0yMyA0MGgxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+;" vertex="1" parent="1">
+      <mxGeometry x="48" y="768" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="blk1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E3F4F1;strokeColor=#1F8A7A;strokeWidth=1.5;" vertex="1" parent="1">
+      <mxGeometry x="344" y="644" width="280" height="356" as="geometry" />
+    </mxCell>
+    <mxCell id="st1" value="v2 · Central data + device state&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:11px;margin-top:4px&quot;&gt;&lt;b&gt;Delivered:&lt;/b&gt; one central copy, device IDs, sync status and last-seen per till.&lt;br&gt;&lt;br&gt;&lt;b&gt;Agent needs it for:&lt;/b&gt; ‘why didn't till 3 sync?’&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#E3F4F1;strokeColor=#1F8A7A;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=34;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="344" y="644" width="280" height="180" as="geometry" />
+    </mxCell>
+    <mxCell id="st1_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMxRjhBN0EiLz48cGF0aCBkPSJNNDYgMjZhMTUgMTUgMCAwIDAtMjctNE0xOCAzOGExNSAxNSAwIDAgMCAyNyA0IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMTkgMTN2OWg5TTQ1IDUxdi05aC05IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=;" vertex="1" parent="1">
+      <mxGeometry x="352" y="652" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="e1" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=2;exitX=1;exitY=0.1889;exitDx=0;exitDy=0;entryX=0;entryY=0.8333;entryDx=0;entryDy=0;" edge="1" parent="1" source="st0" target="st1">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="blk2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.5;" vertex="1" parent="1">
+      <mxGeometry x="648" y="528" width="280" height="472" as="geometry" />
+    </mxCell>
+    <mxCell id="st2" value="v3 · Tenant isolation + search&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:11px;margin-top:4px&quot;&gt;&lt;b&gt;Delivered:&lt;/b&gt; TenantID + row-level security; CDC → Elasticsearch history.&lt;br&gt;&lt;br&gt;&lt;b&gt;Agent needs it for:&lt;/b&gt; never leaking across tenants; searching past orders fast.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=34;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="648" y="528" width="280" height="180" as="geometry" />
+    </mxCell>
+    <mxCell id="st2_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMzQjZGRDYiLz48cGF0aCBkPSJNMTIgNTJWMjJsMjAtMTAgMjAgMTB2MzB6IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMjQgNTJWMzZoMTZ2MTZNMjQgMjhoNE0zNiAyOGg0IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMi41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=;" vertex="1" parent="1">
+      <mxGeometry x="656" y="536" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="e2" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=2;exitX=1;exitY=0.1889;exitDx=0;exitDy=0;entryX=0;entryY=0.8333;entryDx=0;entryDy=0;" edge="1" parent="1" source="st1" target="st2">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="blk3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FCEBD9;strokeColor=#D9822B;strokeWidth=1.5;" vertex="1" parent="1">
+      <mxGeometry x="952" y="412" width="280" height="588" as="geometry" />
+    </mxCell>
+    <mxCell id="st3" value="v4 · Integration status&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:11px;margin-top:4px&quot;&gt;&lt;b&gt;Delivered:&lt;/b&gt; order state machine, partner webhooks, gateway status per payment.&lt;br&gt;&lt;br&gt;&lt;b&gt;Agent needs it for:&lt;/b&gt; ‘where is my DoorDash order?’&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#FCEBD9;strokeColor=#D9822B;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=34;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="952" y="412" width="280" height="180" as="geometry" />
+    </mxCell>
+    <mxCell id="st3_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiNEOTgyMkIiLz48cGF0aCBkPSJNMzIgMTJ2MjJhOSA5IDAgMSAxLTktOSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PGNpcmNsZSBjeD0iMzIiIGN5PSIxMiIgcj0iMyIgZmlsbD0iI0ZGRkZGRiIvPjwvc3ZnPg==;" vertex="1" parent="1">
+      <mxGeometry x="960" y="420" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="e3" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=2;exitX=1;exitY=0.1889;exitDx=0;exitDy=0;entryX=0;entryY=0.8333;entryDx=0;entryDy=0;" edge="1" parent="1" source="st2" target="st3">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="blk4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ECE9FB;strokeColor=#7A6BD6;strokeWidth=1.5;" vertex="1" parent="1">
+      <mxGeometry x="1256" y="296" width="280" height="704" as="geometry" />
+    </mxCell>
+    <mxCell id="st4" value="v5 · APIs, events, telemetry, audit&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:11px;margin-top:4px&quot;&gt;&lt;b&gt;Delivered:&lt;/b&gt; stable APIs and events, OpenTelemetry traces and logs, an audit trail.&lt;br&gt;&lt;br&gt;&lt;b&gt;Agent needs it for:&lt;/b&gt; MCP tools: evidence to read and safe, audited writes.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#ECE9FB;strokeColor=#7A6BD6;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=34;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1256" y="296" width="280" height="180" as="geometry" />
+    </mxCell>
+    <mxCell id="st4_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiM3QTZCRDYiLz48cGF0aCBkPSJNOCAzMmM4LTEyIDE2LTE2IDI0LTE2czE2IDQgMjQgMTZjLTggMTItMTYgMTYtMjQgMTZTMTYgNDQgOCAzMnoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxjaXJjbGUgY3g9IjMyIiBjeT0iMzIiIHI9IjYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==;" vertex="1" parent="1">
+      <mxGeometry x="1264" y="304" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="e4" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=2;exitX=1;exitY=0.1889;exitDx=0;exitDy=0;entryX=0;entryY=0.8333;entryDx=0;entryDy=0;" edge="1" parent="1" source="st3" target="st4">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="blk5" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.5;" vertex="1" parent="1">
+      <mxGeometry x="1560" y="180" width="280" height="820" as="geometry" />
+    </mxCell>
+    <mxCell id="st5" value="AI support copilot&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:11px;margin-top:4px&quot;&gt;RAG over the knowledge base · MCP tools over v5 APIs · guardrails · human approval for refunds and writes · evaluation on real tickets.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=34;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1560" y="180" width="280" height="180" as="geometry" />
+    </mxCell>
+    <mxCell id="st5_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiNDOTQ1NDUiLz48cmVjdCB4PSIxNCIgeT0iMjIiIHdpZHRoPSIzNiIgaGVpZ2h0PSIyNiIgcng9IjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxjaXJjbGUgY3g9IjI1IiBjeT0iMzQiIHI9IjMiIGZpbGw9IiNGRkZGRkYiLz48Y2lyY2xlIGN4PSIzOSIgY3k9IjM0IiByPSIzIiBmaWxsPSIjRkZGRkZGIi8+PHBhdGggZD0iTTMyIDIydi04TTI2IDQyaDEyIiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=;" vertex="1" parent="1">
+      <mxGeometry x="1568" y="188" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="e5" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=2;exitX=1;exitY=0.1889;exitDx=0;exitDy=0;entryX=0;entryY=0.8333;entryDx=0;entryDy=0;" edge="1" parent="1" source="st4" target="st5">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="base" value="foundations ↑ each step only works because the one below it exists" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#1A1A1A;fontSize=12;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="1012" width="1000" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="warn" value="What goes wrong if you add the agent at v1 / v2&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:12px;margin-top:4px&quot;&gt;&lt;b&gt;No tenant boundary:&lt;/b&gt; one prompt injection can read another retailer's data.&lt;br&gt;&lt;b&gt;No audit trail:&lt;/b&gt; you can't show who (or what) changed an order.&lt;br&gt;&lt;b&gt;No APIs:&lt;/b&gt; the agent screen-scrapes or runs raw SQL.&lt;br&gt;&lt;b&gt;Unsafe writes:&lt;/b&gt; refunds with no idempotency key or approval step.&lt;br&gt;&lt;b&gt;No telemetry:&lt;/b&gt; nothing to judge whether its answers were right.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=34;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="130" width="860" height="170" as="geometry" />
+    </mxCell>
+    <mxCell id="warn_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiNDOTQ1NDUiLz48cGF0aCBkPSJNMzIgMTBsMjIgNDBIMTB6IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMzIgMjZ2MTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxjaXJjbGUgY3g9IjMyIiBjeT0iNDQiIHI9IjIuNSIgZmlsbD0iI0ZGRkZGRiIvPjwvc3ZnPg==;" vertex="1" parent="1">
+      <mxGeometry x="48" y="138" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="rule" value="Rule of thumb&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:12px;margin-top:4px&quot;&gt;Build the agent when you can answer ‘which API would it call, under which tenant, and where is that logged?’ for every action. In this POS that was only true after v5.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#E2F4E4;strokeColor=#2E9E3E;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=34;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="320" width="860" height="90" as="geometry" />
+    </mxCell>
+    <mxCell id="rule_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMyRTlFM0UiLz48Y2lyY2xlIGN4PSIzMiIgY3k9IjMyIiByPSIxNyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTMyIDMwdjEyIiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48Y2lyY2xlIGN4PSIzMiIgY3k9IjIzIiByPSIyLjUiIGZpbGw9IiNGRkZGRkYiLz48L3N2Zz4=;" vertex="1" parent="1">
+      <mxGeometry x="48" y="328" width="22" height="22" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>

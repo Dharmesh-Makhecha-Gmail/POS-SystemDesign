@@ -1,0 +1,296 @@
+<mxGraphModel dx="1920" dy="1190" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1190" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- ===================== TITLE + FRAME ===================== -->
+    <mxCell id="title" value="Offline-first conflict rules · who may write what while the till is offline, and how it merges" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontColor=#1A1A1A;fontSize=26;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="80" y="14" width="1760" height="44" as="geometry" />
+    </mxCell>
+    <mxCell id="hc0" value="Data" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#333333;strokeColor=#333333;fontColor=#FFFFFF;fontSize=13;fontStyle=1;align=left;spacingLeft=10;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="92" width="230" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="hc1" value="Who may write offline" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#333333;strokeColor=#333333;fontColor=#FFFFFF;fontSize=13;fontStyle=1;align=left;spacingLeft=10;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="270" y="92" width="260" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="hc2" value="Rule" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#333333;strokeColor=#333333;fontColor=#FFFFFF;fontSize=13;fontStyle=1;align=left;spacingLeft=10;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="530" y="92" width="220" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="hc3" value="How it works (example)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#333333;strokeColor=#333333;fontColor=#FFFFFF;fontSize=13;fontStyle=1;align=left;spacingLeft=10;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="750" y="92" width="600" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="hc4" value="What the user sees" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#333333;strokeColor=#333333;fontColor=#FFFFFF;fontSize=13;fontStyle=1;align=left;spacingLeft=10;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1350" y="92" width="530" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="c0a" value="Sales &amp; receipts" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="132" width="230" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c0b" value="The till that made the sale" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="270" y="132" width="260" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c0c" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="530" y="132" width="220" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c0d" value="ULID id + receipt S01-T07-000041 (StoreCode-TerminalCode-Seq). Insert-only, never updated; a void or return is a new row." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="750" y="132" width="600" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c0e" value="The sale completes instantly; it shows in the back office after the next push." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1350" y="132" width="530" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c0r0" value="device-owned" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#E3F4F1;strokeColor=#1F8A7A;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="544" y="140.0" width="192" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="c0r1" value="append-only" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#E2F4E4;strokeColor=#2E9E3E;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="544" y="172.0" width="192" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="c1a" value="Stock" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6F6F6;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="206" width="230" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c1b" value="Every till, as movements only" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6F6F6;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="270" y="206" width="260" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c1c" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6F6F6;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="530" y="206" width="220" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c1d" value="Till writes a −3 movement. The cloud sums movements per item and store and never overwrites a quantity. A negative result goes to an exception queue." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6F6F6;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="750" y="206" width="600" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c1e" value="Stock can show negative for a while; the store manager gets a 'count or transfer' task." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6F6F6;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1350" y="206" width="530" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c1r0" value="append-only" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#E2F4E4;strokeColor=#2E9E3E;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="544" y="230.0" width="192" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="c2a" value="Products &amp; prices" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="280" width="230" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c2b" value="Nobody at the till" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="270" y="280" width="260" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c2c" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="530" y="280" width="220" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c2d" value="Price versions with effective-from dates. Each sale line keeps the price actually charged, so a later price change never rewrites a past sale." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="750" y="280" width="600" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c2e" value="Old price until the next pull; the receipt always matches what was charged." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1350" y="280" width="530" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c2r0" value="cloud wins" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="544" y="304.0" width="192" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="c3a" value="Promotions" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6F6F6;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="354" width="230" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c3b" value="Nobody at the till" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6F6F6;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="270" y="354" width="260" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c3c" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6F6F6;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="530" y="354" width="220" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c3d" value="The last synced set is used offline with its valid-to date; a promo stops at expiry even if the till is still offline." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6F6F6;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="750" y="354" width="600" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c3e" value="An expired promo is not applied; a new promo appears after the next pull." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6F6F6;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1350" y="354" width="530" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c3r0" value="cloud wins" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="544" y="378.0" width="192" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="c4a" value="Customer profile" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="428" width="230" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c4b" value="Any till (new customer, edits)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="270" y="428" width="260" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c4c" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="530" y="428" width="220" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c4d" value="Customers created offline are merged by phone number. Edits to an existing profile: field-level last-write-wins by hybrid logical clock (email from till A and address from till B are both kept)." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="750" y="428" width="600" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c4e" value="Duplicates are rare; the latest edit of each field wins." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1350" y="428" width="530" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c4r0" value="merge + LWW (HLC)" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#ECE9FB;strokeColor=#7A6BD6;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="544" y="452.0" width="192" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="c5a" value="Loyalty points" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6F6F6;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="502" width="230" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c5b" value="Earn: any till · Redeem: none offline" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6F6F6;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="270" y="502" width="260" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c5c" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6F6F6;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="530" y="502" width="220" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c5d" value="Earn is written as a pending ledger entry and confirmed on sync. Redeem (paying with points) needs a live balance check and reservation." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6F6F6;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="750" y="502" width="600" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c5e" value="Receipt says 'points pending'; 'Pay with points' is greyed out offline." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6F6F6;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1350" y="502" width="530" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c5r0" value="append-only" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#E2F4E4;strokeColor=#2E9E3E;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="544" y="510.0" width="192" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="c5r1" value="online-only" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="544" y="542.0" width="192" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="c6a" value="Gift cards / store credit" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="576" width="230" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c6b" value="None offline" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="270" y="576" width="260" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c6c" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="530" y="576" width="220" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c6d" value="The balance lives only in the cloud, so the tender is disabled while offline." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="750" y="576" width="600" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c6e" value="Tender greyed out; the customer pays another way." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1350" y="576" width="530" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c6r0" value="online-only" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="544" y="600.0" width="192" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="c7a" value="Card payments" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6F6F6;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="650" width="230" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c7b" value="The card terminal, on its own connection" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6F6F6;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="270" y="650" width="260" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c7c" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6F6F6;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="530" y="650" width="220" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c7d" value="A semi-integrated terminal authorises by itself. If the terminal is offline too: its store-and-forward under the acquirer floor limit, if the acquirer enables it; otherwise decline." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6F6F6;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="750" y="650" width="600" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c7e" value="Card works while the terminal is online; otherwise small amounts may pass, others are declined → ask for cash." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6F6F6;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1350" y="650" width="530" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c7r0" value="terminal decides" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#FCEBD9;strokeColor=#D9822B;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="544" y="674.0" width="192" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="c8a" value="UPI" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="724" width="230" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c8b" value="None offline" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="270" y="724" width="260" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c8c" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="530" y="724" width="220" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c8d" value="The UPI QR / collect request needs internet to confirm payment." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="750" y="724" width="600" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c8e" value="The UPI button is disabled offline." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1350" y="724" width="530" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c8r0" value="online-only" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="544" y="748.0" width="192" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="c9a" value="Returns" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6F6F6;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="798" width="230" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c9b" value="The till, for receipts it holds" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6F6F6;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="270" y="798" width="260" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c9c" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6F6F6;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="530" y="798" width="220" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c9d" value="Same-store receipt in the local DB → return allowed (new return row, +stock movement). Receipt from another store → online lookup needed." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6F6F6;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="750" y="798" width="600" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c9e" value="Same-store returns work offline; cross-store returns wait for the network." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6F6F6;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1350" y="798" width="530" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c9r0" value="device-owned" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#E3F4F1;strokeColor=#1F8A7A;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="544" y="806.0" width="192" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="c9r1" value="online-only" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="544" y="838.0" width="192" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="c10a" value="Cash drawer &amp; shift" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="872" width="230" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c10b" value="The till that owns the drawer" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="270" y="872" width="260" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c10c" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="530" y="872" width="220" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c10d" value="Float, cash in/out and the Z-report belong to one terminal and are pushed as events." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="750" y="872" width="600" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c10e" value="Shift close works offline; head office sees it after sync." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1350" y="872" width="530" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c10r0" value="device-owned" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#E3F4F1;strokeColor=#1F8A7A;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="544" y="896.0" width="192" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="c11a" value="Users &amp; permissions" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6F6F6;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="946" width="230" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c11b" value="Nobody at the till" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6F6F6;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="270" y="946" width="260" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c11c" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6F6F6;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="530" y="946" width="220" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c11d" value="Offline PIN cache (hashed) expires 24 h after the last sync; revoked users are removed on the next pull." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6F6F6;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="750" y="946" width="600" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c11e" value="Login works offline for 24 h, then a manager needs the network." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6F6F6;strokeColor=#CCCCCC;fontColor=#1A1A1A;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1350" y="946" width="530" height="74" as="geometry" />
+    </mxCell>
+    <mxCell id="c11r0" value="cloud wins" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="544" y="970.0" width="192" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="lgB" value="" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#BBBBBB;strokeWidth=1.5;" vertex="1" parent="1">
+      <mxGeometry x="40" y="1040" width="1840" height="112" as="geometry" />
+    </mxCell>
+    <mxCell id="lgBt" value="Rule chips" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#1A1A1A;fontSize=12;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="54" y="1048" width="200" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="lg0" value="append-only" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#E2F4E4;strokeColor=#2E9E3E;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="54" y="1076" width="190" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="lg0t" value="insert new rows, sum them; never update" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#1A1A1A;fontSize=11;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="254" y="1079" width="400" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="lg1" value="device-owned" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#E3F4F1;strokeColor=#1F8A7A;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="664" y="1076" width="190" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="lg1t" value="one till owns it; no one else writes" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#1A1A1A;fontSize=11;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="864" y="1079" width="400" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="lg2" value="cloud wins" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1274" y="1076" width="190" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="lg2t" value="back office is the only writer; till caches" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#1A1A1A;fontSize=11;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1474" y="1079" width="400" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="lg3" value="merge + LWW (HLC)" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#ECE9FB;strokeColor=#7A6BD6;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="54" y="1112" width="190" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="lg3t" value="merge new by phone; per-field latest wins" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#1A1A1A;fontSize=11;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="254" y="1115" width="400" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="lg4" value="online-only" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="664" y="1112" width="190" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="lg4t" value="needs a live cloud check; disabled offline" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#1A1A1A;fontSize=11;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="864" y="1115" width="400" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="lg5" value="terminal decides" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#FCEBD9;strokeColor=#D9822B;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1274" y="1112" width="190" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="lg5t" value="card terminal's own link / floor limit" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#1A1A1A;fontSize=11;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1474" y="1115" width="400" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="frame" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#BBBBBB;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="10" y="70" width="1900" height="1102" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>

@@ -1,0 +1,342 @@
+<mxGraphModel dx="1920" dy="1490" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1490" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- ===================== TITLE + FRAME ===================== -->
+    <mxCell id="title" value="Offline-first · Tenders while the till is offline, and the loyalty double-spend" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontColor=#1A1A1A;fontSize=26;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="100" y="14" width="1720" height="44" as="geometry" />
+    </mxCell>
+    <mxCell id="frame" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#BBBBBB;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="10" y="70" width="1900" height="1400" as="geometry" />
+    </mxCell>
+
+    <!-- ===================== 1 · DECISION FLOW PER TENDER ===================== -->
+    <mxCell id="b1" value="" style="rounded=1;arcSize=1;whiteSpace=wrap;html=1;fillColor=#FDFDFD;strokeColor=#3B6FD6;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="22" y="84" width="1876" height="760" as="geometry" />
+    </mxCell>
+    <mxCell id="b1_t" value="1 · Checkout with no internet: one path per tender" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#3B6FD6;fontSize=13;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="34" y="92" width="1852" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="start" value="Till offline&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;customer picks a tender&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="120" width="200" height="700" as="geometry" />
+    </mxCell>
+    <mxCell id="start_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMzQjZGRDYiLz48cGF0aCBkPSJNMTIgMjZhMjggMjggMCAwIDEgNDAgME0xOSAzM2ExOCAxOCAwIDAgMSAyNiAwTTI2IDQwYTggOCAwIDAgMSAxMiAwIiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48Y2lyY2xlIGN4PSIzMiIgY3k9IjQ3IiByPSIyLjUiIGZpbGw9IiNGRkZGRkYiLz48cGF0aCBkPSJNMTQgMTRsMzYgMzYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==;" vertex="1" parent="1">
+      <mxGeometry x="47" y="459.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="t_cash" value="Cash" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E2F4E4;strokeColor=#2E9E3E;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="280" y="120" width="200" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="t_cash_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMyRTlFM0UiLz48cmVjdCB4PSIxMCIgeT0iMjAiIHdpZHRoPSI0NCIgaGVpZ2h0PSIyNiIgcng9IjMiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxjaXJjbGUgY3g9IjMyIiBjeT0iMzMiIHI9IjYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==;" vertex="1" parent="1">
+      <mxGeometry x="287" y="134.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="es_cash" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=1.6;exitX=1;exitY=0.0357;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="start" target="t_cash">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="t_card" value="Card" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="280" y="220" width="200" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="t_card_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMzQjZGRDYiLz48cmVjdCB4PSIxMCIgeT0iMTgiIHdpZHRoPSI0NCIgaGVpZ2h0PSIyOSIgcng9IjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik0xMCAyN2g0NE0xNyAzOWgxMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+;" vertex="1" parent="1">
+      <mxGeometry x="287" y="234.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="es_card" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=1.6;exitX=1;exitY=0.1786;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="start" target="t_card">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="t_upi" value="UPI" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="280" y="480" width="200" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="t_upi_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiNDOTQ1NDUiLz48cmVjdCB4PSIyMiIgeT0iMTIiIHdpZHRoPSIyMCIgaGVpZ2h0PSI0MCIgcng9IjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxjaXJjbGUgY3g9IjMyIiBjeT0iNDUiIHI9IjIuNSIgZmlsbD0iI0ZGRkZGRiIvPjwvc3ZnPg==;" vertex="1" parent="1">
+      <mxGeometry x="287" y="494.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="es_upi" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=1.6;exitX=1;exitY=0.55;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="start" target="t_upi">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="t_gift" value="Gift card / credit" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="280" y="550" width="200" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="t_gift_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiNDOTQ1NDUiLz48cmVjdCB4PSIxMCIgeT0iMTgiIHdpZHRoPSI0NCIgaGVpZ2h0PSIyOSIgcng9IjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik0xMCAyN2g0NE0xNyAzOWgxMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+;" vertex="1" parent="1">
+      <mxGeometry x="287" y="564.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="es_gift" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=1.6;exitX=1;exitY=0.65;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="start" target="t_gift">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="t_red" value="Redeem points" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="280" y="620" width="200" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="t_red_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiNDOTQ1NDUiLz48cGF0aCBkPSJNMTQgNDloMzYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yMSA0M1YzM00zMiA0M1YxOU00MyA0M1YyNyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==;" vertex="1" parent="1">
+      <mxGeometry x="287" y="634.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="es_red" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=1.6;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="start" target="t_red">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="t_earn" value="Earn points" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FCEBD9;strokeColor=#D9822B;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="280" y="690" width="200" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="t_earn_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiNEOTgyMkIiLz48cGF0aCBkPSJNMTQgNDloMzYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yMSA0M1YzM00zMiA0M1YxOU00MyA0M1YyNyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==;" vertex="1" parent="1">
+      <mxGeometry x="287" y="704.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="es_earn" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=1.6;exitX=1;exitY=0.85;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="start" target="t_earn">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="t_cust" value="New customer" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FCEBD9;strokeColor=#D9822B;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="280" y="760" width="200" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="t_cust_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiNEOTgyMkIiLz48Y2lyY2xlIGN4PSIzMiIgY3k9IjIzIiByPSI4IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMTcgNDlhMTUgMTMgMCAwIDEgMzAgMHoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==;" vertex="1" parent="1">
+      <mxGeometry x="287" y="774.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="es_cust" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=1.6;exitX=1;exitY=0.95;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="start" target="t_cust">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="o_cash" value="Accept&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;cash drawer · local receipt · sale queued in the outbox&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E2F4E4;strokeColor=#2E9E3E;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1000" y="120" width="440" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="eo_cash" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=1.6;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_cash" target="o_cash">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="o_upi" value="Decline&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;UPI needs the bank online · ask for another tender&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1000" y="480" width="440" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="eo_upi" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#C94545;strokeWidth=1.6;dashed=1;dashPattern=8 5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_upi" target="o_upi">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="o_gift" value="Decline&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;the balance lives in the cloud · online only&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1000" y="550" width="440" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="eo_gift" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#C94545;strokeWidth=1.6;dashed=1;dashPattern=8 5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_gift" target="o_gift">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="o_red" value="Not offered&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;points can't be spent offline (see part 2)&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1000" y="620" width="440" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="eo_red" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#C94545;strokeWidth=1.6;dashed=1;dashPattern=8 5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_red" target="o_red">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="o_earn" value="Allow · PENDING&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;points held as pending until the sale syncs&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FCEBD9;strokeColor=#D9822B;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1000" y="690" width="440" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="eo_earn" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=1.6;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_earn" target="o_earn">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="o_cust" value="Allow · merge later&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;created locally; merged by phone number on sync&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FCEBD9;strokeColor=#D9822B;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1000" y="760" width="440" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="eo_cust" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=1.6;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_cust" target="o_cust">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="d1" value="Card terminal online&lt;br&gt;on its own line?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="520.0" y="203.0" width="320" height="84" as="geometry" />
+    </mxCell>
+    <mxCell id="d2" value="Acquirer allows S&amp;amp;F&lt;br&gt;and amount ≤ floor limit?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FCEBD9;strokeColor=#D9822B;strokeWidth=2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="520.0" y="310.0" width="320" height="90" as="geometry" />
+    </mxCell>
+    <mxCell id="ec1" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=1.6;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_card" target="d1">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="o_c1" value="Terminal authorises itself&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;semi-integrated · POS just records the result&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E2F4E4;strokeColor=#2E9E3E;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1000" y="220" width="440" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="o_c2" value="Terminal store-and-forward&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;terminal's own S&amp;F under the acquirer floor limit · POS records its result&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FCEBD9;strokeColor=#D9822B;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1000" y="330" width="440" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="o_c3" value="Decline&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;ask for another tender&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="540" y="425" width="280" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="ec2" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#2E9E3E;strokeWidth=1.6;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="d1" target="o_c1">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="y1" value="yes" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#2E9E3E;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="880" y="222" width="44" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="ec3" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#C94545;strokeWidth=1.6;dashed=1;dashPattern=8 5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="d1" target="d2">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="n1" value="no" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#C94545;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="688" y="288" width="44" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="ec4" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#2E9E3E;strokeWidth=1.6;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="d2" target="o_c2">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="y2" value="yes" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#2E9E3E;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="880" y="332" width="44" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="ec5" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#C94545;strokeWidth=1.6;dashed=1;dashPattern=8 5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="d2" target="o_c3">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="n2" value="no" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#C94545;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="688" y="402" width="44" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="rules" value="Offline rules (design-decisions §2.2)&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:12px;margin-top:4px&quot;&gt;&lt;b&gt;Works offline:&lt;/b&gt; cash · card when the terminal is online or uses its own S&amp;amp;F · earning points · new customers&lt;br&gt;&lt;br&gt;&lt;b&gt;Needs internet:&lt;/b&gt; UPI · redeeming points · gift cards and store credit&lt;br&gt;&lt;br&gt;&lt;b&gt;The POS never holds card data&lt;/b&gt;: the semi-integrated terminal authorises, the POS stores only the terminal's result (approved / stored / declined, masked PAN, auth code).&lt;br&gt;&lt;br&gt;Floor limit and S&amp;amp;F are the acquirer's settings, not ours.&lt;br&gt;&lt;br&gt;&lt;b&gt;Customers created offline&lt;/b&gt; get a ULID on the till; on sync the cloud merges them by phone number and remaps the sale to the surviving customer id.&lt;br&gt;&lt;br&gt;&lt;b&gt;Pending points&lt;/b&gt; become available when the sale's push is acked OK; a rejected sale cancels them.&lt;br&gt;&lt;br&gt;&lt;b&gt;Every offline sale&lt;/b&gt; is written to the SQLite outbox in the same transaction as the sale, so nothing sold is lost if the till restarts.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#ECE9FB;strokeColor=#7A6BD6;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=34;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1470" y="120" width="410" height="700" as="geometry" />
+    </mxCell>
+    <mxCell id="rules_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiM3QTZCRDYiLz48cGF0aCBkPSJNMzIgMTJsMTYgNnYxMmMwIDExLTcgMTgtMTYgMjItOS00LTE2LTExLTE2LTIyVjE4eiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTI1IDMybDUgNSA5LTEwIiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=;" vertex="1" parent="1">
+      <mxGeometry x="1478" y="128" width="22" height="22" as="geometry" />
+    </mxCell>
+
+    <!-- ===================== 2 · DOUBLE SPEND ===================== -->
+    <mxCell id="b2" value="" style="rounded=1;arcSize=1;whiteSpace=wrap;html=1;fillColor=#FDFDFD;strokeColor=#C94545;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="22" y="860" width="1876" height="340" as="geometry" />
+    </mxCell>
+    <mxCell id="b2_t" value="2 · Why redeeming needs the cloud: the double-spend it prevents" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#C94545;fontSize=13;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="34" y="868" width="1852" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="a0" value="If redeem were allowed offline&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;customer balance: 1,000 points (cached on both tills)&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="900" width="820" height="56" as="geometry" />
+    </mxCell>
+    <mxCell id="a0_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiNDOTQ1NDUiLz48cGF0aCBkPSJNMzIgMTBsMjIgNDBIMTB6IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMzIgMjZ2MTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxjaXJjbGUgY3g9IjMyIiBjeT0iNDQiIHI9IjIuNSIgZmlsbD0iI0ZGRkZGRiIvPjwvc3ZnPg==;" vertex="1" parent="1">
+      <mxGeometry x="47" y="917.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="a1" value="Till 1 · offline&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;redeems 1,000 · local cache says 1,000 ✓&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="990" width="400" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="a1_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiNDOTQ1NDUiLz48cmVjdCB4PSIxMiIgeT0iMzQiIHdpZHRoPSI0MCIgaGVpZ2h0PSIxNiIgcng9IjIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxyZWN0IHg9IjE4IiB5PSIxNCIgd2lkdGg9IjI4IiBoZWlnaHQ9IjE2IiByeD0iMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTMyIDMwdjRNMjAgNDJoNk0zMCA0Mmg2TTQwIDQyaDQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==;" vertex="1" parent="1">
+      <mxGeometry x="47" y="1019.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="a2" value="Till 2 · offline&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;redeems 1,000 · its cache also says 1,000 ✓&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="460" y="990" width="400" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="a2_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiNDOTQ1NDUiLz48cmVjdCB4PSIxMiIgeT0iMzQiIHdpZHRoPSI0MCIgaGVpZ2h0PSIxNiIgcng9IjIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxyZWN0IHg9IjE4IiB5PSIxNCIgd2lkdGg9IjI4IiBoZWlnaHQ9IjE2IiByeD0iMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTMyIDMwdjRNMjAgNDJoNk0zMCA0Mmg2TTQwIDQyaDQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==;" vertex="1" parent="1">
+      <mxGeometry x="467" y="1019.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="a3" value="Both sales sync: 2,000 points spent from a balance of 1,000&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;balance −1,000 · money already given away&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="1110" width="820" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="a3_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiNDOTQ1NDUiLz48cGF0aCBkPSJNMTQgMThoMTZsLTQgMTAgOCA2LTQgMTJIMTR6IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMzggMThoMTJ2MjhIMzRsNC0xMi04LTZ6IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=;" vertex="1" parent="1">
+      <mxGeometry x="47" y="1134.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="ea1" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#C94545;strokeWidth=1.6;dashed=1;dashPattern=8 5;exitX=0.2439;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="a0" target="a1">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="ea2" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#C94545;strokeWidth=1.6;dashed=1;dashPattern=8 5;exitX=0.7561;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="a0" target="a2">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="ea3" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#C94545;strokeWidth=1.6;dashed=1;dashPattern=8 5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.2439;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="a1" target="a3">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="ea4" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#C94545;strokeWidth=1.6;dashed=1;dashPattern=8 5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.7561;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="a2" target="a3">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="r0" value="Redeem online only&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;balance 1,000 · the cloud is the only points ledger&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E2F4E4;strokeColor=#2E9E3E;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1000" y="900" width="880" height="56" as="geometry" />
+    </mxCell>
+    <mxCell id="r0_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMyRTlFM0UiLz48cGF0aCBkPSJNMzIgMTJsMTYgNnYxMmMwIDExLTcgMTgtMTYgMjItOS00LTE2LTExLTE2LTIyVjE4eiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTI1IDMybDUgNSA5LTEwIiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=;" vertex="1" parent="1">
+      <mxGeometry x="1007" y="917.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="r1" value="Till 1 · online&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;RESERVE 1,000 → hold H1 ✓ · sale completes → COMMIT H1&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E2F4E4;strokeColor=#2E9E3E;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1000" y="990" width="430" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="r1_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMyRTlFM0UiLz48cmVjdCB4PSIxMiIgeT0iMzQiIHdpZHRoPSI0MCIgaGVpZ2h0PSIxNiIgcng9IjIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxyZWN0IHg9IjE4IiB5PSIxNCIgd2lkdGg9IjI4IiBoZWlnaHQ9IjE2IiByeD0iMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTMyIDMwdjRNMjAgNDJoNk0zMCA0Mmg2TTQwIDQyaDQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==;" vertex="1" parent="1">
+      <mxGeometry x="1007" y="1019.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="r2" value="Till 2 · online&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;RESERVE 1,000 → refused: available 0&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1450" y="990" width="430" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="r2_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiNDOTQ1NDUiLz48cmVjdCB4PSIxMiIgeT0iMzQiIHdpZHRoPSI0MCIgaGVpZ2h0PSIxNiIgcng9IjIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxyZWN0IHg9IjE4IiB5PSIxNCIgd2lkdGg9IjI4IiBoZWlnaHQ9IjE2IiByeD0iMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTMyIDMwdjRNMjAgNDJoNk0zMCA0Mmg2TTQwIDQyaDQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==;" vertex="1" parent="1">
+      <mxGeometry x="1457" y="1019.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="r3" value="Spent once&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;voided sale or 10-min timeout → RELEASE H1 · earned points sync as pending, usable once the sale syncs&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E2F4E4;strokeColor=#2E9E3E;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1000" y="1110" width="880" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="r3_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMyRTlFM0UiLz48cmVjdCB4PSIxNiIgeT0iMTIiIHdpZHRoPSIzMiIgaGVpZ2h0PSI0MCIgcng9IjMiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yMyAyMmgxOE0yMyAzMWgxOE0yMyA0MGgxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+;" vertex="1" parent="1">
+      <mxGeometry x="1007" y="1134.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="er1" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#2E9E3E;strokeWidth=1.6;exitX=0.2443;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="r0" target="r1">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="er2" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#C94545;strokeWidth=1.6;dashed=1;dashPattern=8 5;exitX=0.7557;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="r0" target="r2">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="er3" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#2E9E3E;strokeWidth=1.6;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.2443;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="r1" target="r3">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+
+    <!-- ===================== 3 · RECONCILE S&F CARD PAYMENTS ===================== -->
+    <mxCell id="b3" value="" style="rounded=1;arcSize=1;whiteSpace=wrap;html=1;fillColor=#FDFDFD;strokeColor=#D9822B;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="22" y="1216" width="1876" height="236" as="geometry" />
+    </mxCell>
+    <mxCell id="b3_t" value="3 · After reconnect: reconcile card payments the terminal stored offline" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#D9822B;fontSize=13;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="34" y="1224" width="1852" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="c0" value="Terminal back online" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="1270" width="220" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="c0_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMzQjZGRDYiLz48cGF0aCBkPSJNMTIgMjZhMjggMjggMCAwIDEgNDAgME0xOSAzM2ExOCAxOCAwIDAgMSAyNiAwTTI2IDQwYTggOCAwIDAgMSAxMiAwIiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48Y2lyY2xlIGN4PSIzMiIgY3k9IjQ3IiByPSIyLjUiIGZpbGw9IiNGRkZGRkYiLz48L3N2Zz4=;" vertex="1" parent="1">
+      <mxGeometry x="47" y="1289.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="c1" value="Terminal forwards stored auths&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;to the acquirer · matched to the POS by paymentId&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="290" y="1270" width="340" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="c1_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMzQjZGRDYiLz48cGF0aCBkPSJNNDYgMjZhMTUgMTUgMCAwIDAtMjctNE0xOCAzOGExNSAxNSAwIDAgMCAyNyA0IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMTkgMTN2OWg5TTQ1IDUxdi05aC05IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=;" vertex="1" parent="1">
+      <mxGeometry x="297" y="1289.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="c2" value="Approved?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FCEBD9;strokeColor=#D9822B;strokeWidth=2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="660.0" y="1265.0" width="200" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="c3" value="Mark settled&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;nothing more to do&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E2F4E4;strokeColor=#2E9E3E;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="920" y="1270" width="320" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="c4" value="Offline-declined queue&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;manager follows up with the customer&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="920" y="1360" width="320" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="c4_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiNDOTQ1NDUiLz48cmVjdCB4PSIxMCIgeT0iMjIiIHdpZHRoPSIxMiIgaGVpZ2h0PSIyMCIgcng9IjIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxyZWN0IHg9IjI2IiB5PSIyMiIgd2lkdGg9IjEyIiBoZWlnaHQ9IjIwIiByeD0iMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTQyIDMyaDEyTTQ4IDI2bDYgNi02IDYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==;" vertex="1" parent="1">
+      <mxGeometry x="927" y="1379.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="c5" value="Loss accepted&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;within the floor limit · reported per store&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FCEBD9;strokeColor=#D9822B;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1270" y="1360" width="320" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="ef0" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=1.6;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="c0" target="c1">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="ef1" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=1.6;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="c1" target="c2">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="ef2" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#2E9E3E;strokeWidth=1.6;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="c2" target="c3">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="y3" value="yes" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#2E9E3E;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="868" y="1277" width="44" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="ef3" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#C94545;strokeWidth=1.6;dashed=1;dashPattern=8 5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="c2" target="c4">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points"><mxPoint x="760" y="1390" /></Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="n3" value="no" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#C94545;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="768" y="1338" width="44" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="ef4" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#C94545;strokeWidth=1.6;dashed=1;dashPattern=8 5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="c4" target="c5">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="n3c" value="Tenant setting: allow card S&amp;amp;F at all? Many retailers switch it off and accept a few lost card sales instead." style="shape=note;whiteSpace=wrap;html=1;size=14;fillColor=#FFF8E6;strokeColor=#D9A13B;strokeWidth=1.5;fontColor=#1A1A1A;fontSize=11;align=left;verticalAlign=top;spacingLeft=10;spacingTop=6;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1620" y="1262" width="260" height="120" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>

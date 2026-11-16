@@ -1,0 +1,282 @@
+<mxGraphModel dx="1920" dy="1290" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1290" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- ===================== TITLE + FRAME ===================== -->
+    <mxCell id="title" value="Offline-first · Stock: sync movements (append-only ledger), never the quantity" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontColor=#1A1A1A;fontSize=26;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="100" y="14" width="1720" height="44" as="geometry" />
+    </mxCell>
+    <mxCell id="frame" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#BBBBBB;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="10" y="70" width="1900" height="1200" as="geometry" />
+    </mxCell>
+
+    <!-- ===================== A · WRONG ===================== -->
+    <mxCell id="bA" value="" style="rounded=1;arcSize=1;whiteSpace=wrap;html=1;fillColor=#FDFDFD;strokeColor=#C94545;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="22" y="84" width="1876" height="380" as="geometry" />
+    </mxCell>
+    <mxCell id="bA_t" value="A · Wrong: each till syncs the quantity it last saw (last write wins)" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#C94545;fontSize=13;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="34" y="92" width="1852" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="At0" value="t0 · both tills go offline" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontColor=#555555;fontSize=10;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="210" y="124" width="200" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="At1" value="t1 · Till 1 sells 3" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontColor=#555555;fontSize=10;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="440" y="124" width="200" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="At2" value="t2 · Till 2 sells 4, office gets +10" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontColor=#555555;fontSize=10;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="670" y="124" width="200" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="At3" value="t3 · Till 1 reconnects" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontColor=#555555;fontSize=10;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="900" y="124" width="200" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="At4" value="t4 · Till 2 reconnects" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontColor=#555555;fontSize=10;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1130" y="124" width="200" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="AL0" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FCFCFC;strokeColor=#CCCCCC;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="152" width="1310" height="100" as="geometry" />
+    </mxCell>
+    <mxCell id="AL0_h" value="Till 1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.5;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="152" width="150" height="100" as="geometry" />
+    </mxCell>
+    <mxCell id="As00" value="local qty = 5&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;last synced value&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1F1F1;strokeColor=#8A8A8A;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="210" y="167" width="200" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="As01" value="Sells 3&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;local qty = 2&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="440" y="167" width="200" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="As03" value="Push qty = 2&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;PUT /stock/X {qty: 2}&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="900" y="167" width="200" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="AL1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FCFCFC;strokeColor=#CCCCCC;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="252" width="1310" height="100" as="geometry" />
+    </mxCell>
+    <mxCell id="AL1_h" value="Till 2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.5;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="252" width="150" height="100" as="geometry" />
+    </mxCell>
+    <mxCell id="As10" value="local qty = 5&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;last synced value&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1F1F1;strokeColor=#8A8A8A;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="210" y="267" width="200" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="As12" value="Sells 4&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;local qty = 1&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="670" y="267" width="200" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="As14" value="Push qty = 1&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;PUT /stock/X {qty: 1}&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1130" y="267" width="200" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="AL2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FCFCFC;strokeColor=#CCCCCC;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="352" width="1310" height="100" as="geometry" />
+    </mxCell>
+    <mxCell id="AL2_h" value="Cloud" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E3F4F1;strokeColor=#1F8A7A;strokeWidth=1.5;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="352" width="150" height="100" as="geometry" />
+    </mxCell>
+    <mxCell id="As20" value="qty = 5&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;store A · item X&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1F1F1;strokeColor=#8A8A8A;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="210" y="367" width="200" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="As22" value="Receive +10&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;back office · qty = 15&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E3F4F1;strokeColor=#1F8A7A;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="670" y="367" width="200" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="As23" value="qty := 2&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;Till 1 overwrites&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="900" y="367" width="200" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="As24" value="qty := 1&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;Till 2 overwrites last&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1130" y="367" width="200" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="Au1" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#3B6FD6;strokeWidth=1.6;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="As03" target="As23">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="Au2" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#3B6FD6;strokeWidth=1.6;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="As14" target="As24">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="Ares" value="Result: cloud shows 1 (or 2)&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:12px;margin-top:4px&quot;&gt;Whichever till arrives last wins, so the cloud says &lt;b&gt;1&lt;/b&gt; (or 2 if the order flips).&lt;br&gt;&lt;br&gt;True on-hand: &lt;b&gt;5 − 3 − 4 + 10 = 8&lt;/b&gt;.&lt;br&gt;&lt;br&gt;The +10 receipt was silently overwritten, and the count is off by 7. Nobody gets an error: the data is just wrong, and every report and reorder built on it is wrong too.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=34;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1370" y="124" width="510" height="320" as="geometry" />
+    </mxCell>
+    <mxCell id="Ares_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiNDOTQ1NDUiLz48cGF0aCBkPSJNMTQgMThoMTZsLTQgMTAgOCA2LTQgMTJIMTR6IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMzggMThoMTJ2MjhIMzRsNC0xMi04LTZ6IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=;" vertex="1" parent="1">
+      <mxGeometry x="1378" y="132" width="22" height="22" as="geometry" />
+    </mxCell>
+
+    <!-- ===================== B · RIGHT ===================== -->
+    <mxCell id="bB" value="" style="rounded=1;arcSize=1;whiteSpace=wrap;html=1;fillColor=#FDFDFD;strokeColor=#2E9E3E;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="22" y="480" width="1876" height="380" as="geometry" />
+    </mxCell>
+    <mxCell id="bB_t" value="B · Right: each till appends movements; the cloud sums them" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#2E9E3E;fontSize=13;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="34" y="488" width="1852" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="Bt0" value="t0 · both tills go offline" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontColor=#555555;fontSize=10;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="210" y="520" width="200" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="Bt1" value="t1 · Till 1 sells 3" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontColor=#555555;fontSize=10;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="440" y="520" width="200" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="Bt2" value="t2 · Till 2 sells 4, office gets +10" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontColor=#555555;fontSize=10;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="670" y="520" width="200" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="Bt3" value="t3 · Till 1 reconnects" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontColor=#555555;fontSize=10;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="900" y="520" width="200" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="Bt4" value="t4 · Till 2 reconnects" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontColor=#555555;fontSize=10;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1130" y="520" width="200" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="BL0" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FCFCFC;strokeColor=#CCCCCC;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="548" width="1310" height="100" as="geometry" />
+    </mxCell>
+    <mxCell id="BL0_h" value="Till 1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.5;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="548" width="150" height="100" as="geometry" />
+    </mxCell>
+    <mxCell id="Bs00" value="ledger: snapshot 5&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;local copy&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1F1F1;strokeColor=#8A8A8A;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="210" y="563" width="200" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="Bs01" value="SALE −3&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;row (T1, seq 41)&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="440" y="563" width="200" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="Bs03" value="Push −3&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;(T1, seq 41)&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="900" y="563" width="200" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="BL1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FCFCFC;strokeColor=#CCCCCC;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="648" width="1310" height="100" as="geometry" />
+    </mxCell>
+    <mxCell id="BL1_h" value="Till 2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.5;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="648" width="150" height="100" as="geometry" />
+    </mxCell>
+    <mxCell id="Bs10" value="ledger: snapshot 5&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;local copy&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1F1F1;strokeColor=#8A8A8A;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="210" y="663" width="200" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="Bs12" value="SALE −4&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;row (T2, seq 17)&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="670" y="663" width="200" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="Bs14" value="Push −4&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;(T2, seq 17)&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1130" y="663" width="200" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="BL2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FCFCFC;strokeColor=#CCCCCC;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="748" width="1310" height="100" as="geometry" />
+    </mxCell>
+    <mxCell id="BL2_h" value="Cloud" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E3F4F1;strokeColor=#1F8A7A;strokeWidth=1.5;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="748" width="150" height="100" as="geometry" />
+    </mxCell>
+    <mxCell id="Bs20" value="Σ = 5&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;store A · item X&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1F1F1;strokeColor=#8A8A8A;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="210" y="763" width="200" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="Bs22" value="RECEIPT +10&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;Σ = 15&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E3F4F1;strokeColor=#1F8A7A;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="670" y="763" width="200" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="Bs23" value="append −3&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;Σ = 12&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E3F4F1;strokeColor=#1F8A7A;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="900" y="763" width="200" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="Bs24" value="append −4&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;Σ = 8 ✓&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E2F4E4;strokeColor=#2E9E3E;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1130" y="763" width="200" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="Bu1" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#3B6FD6;strokeWidth=1.6;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Bs03" target="Bs23">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="Bu2" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#3B6FD6;strokeWidth=1.6;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Bs14" target="Bs24">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="Bres" value="Result: Σ = 8 in any arrival order&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:12px;margin-top:4px&quot;&gt;Rows are only ever &lt;b&gt;inserted&lt;/b&gt;, never updated, so no write can overwrite another.&lt;br&gt;&lt;br&gt;Addition is order-independent: −3, −4, +10 in any order still gives &lt;b&gt;8&lt;/b&gt;.&lt;br&gt;&lt;br&gt;A repeated push hits the inbox key (deviceId, seq) and is applied once (see off-6).&lt;br&gt;&lt;br&gt;Every movement keeps its reason: SALE, RETURN, RECEIPT, TRANSFER, COUNT, WRITE-OFF.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#E2F4E4;strokeColor=#2E9E3E;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=34;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1370" y="520" width="510" height="320" as="geometry" />
+    </mxCell>
+    <mxCell id="Bres_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMyRTlFM0UiLz48cmVjdCB4PSIxNiIgeT0iMTIiIHdpZHRoPSIzMiIgaGVpZ2h0PSI0MCIgcng9IjMiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yMyAyMmgxOE0yMyAzMWgxOE0yMyA0MGgxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+;" vertex="1" parent="1">
+      <mxGeometry x="1378" y="528" width="22" height="22" as="geometry" />
+    </mxCell>
+
+    <!-- ===================== C · NEGATIVE STOCK ===================== -->
+    <mxCell id="bC" value="" style="rounded=1;arcSize=1;whiteSpace=wrap;html=1;fillColor=#FDFDFD;strokeColor=#D9822B;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="22" y="876" width="1876" height="230" as="geometry" />
+    </mxCell>
+    <mxCell id="bC_t" value="C · Same example without the receipt: the ledger goes negative, and that is allowed" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#D9822B;fontSize=13;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="34" y="884" width="1852" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="cN0" value="Σ = 5 − 3 − 4 = −2&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;no receipt this time&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FCEBD9;strokeColor=#D9822B;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="930" width="240" height="110" as="geometry" />
+    </mxCell>
+    <mxCell id="cN0_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiNEOTgyMkIiLz48cGF0aCBkPSJNMTQgNDloMzYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yMSA0M1YzM00zMiA0M1YxOU00MyA0M1YyNyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==;" vertex="1" parent="1">
+      <mxGeometry x="47" y="974.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="cN1" value="Both sales stay&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;a till never refuses a customer over stock&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E2F4E4;strokeColor=#2E9E3E;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="302" y="930" width="240" height="110" as="geometry" />
+    </mxCell>
+    <mxCell id="cN1_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMyRTlFM0UiLz48cmVjdCB4PSIxMiIgeT0iMzQiIHdpZHRoPSI0MCIgaGVpZ2h0PSIxNiIgcng9IjIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxyZWN0IHg9IjE4IiB5PSIxNCIgd2lkdGg9IjI4IiBoZWlnaHQ9IjE2IiByeD0iMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTMyIDMwdjRNMjAgNDJoNk0zMCA0Mmg2TTQwIDQyaDQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==;" vertex="1" parent="1">
+      <mxGeometry x="309" y="974.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="eC1" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=1.6;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="cN0" target="cN1">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="cN2" value="NegativeStock raised&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;store A · item X · −2&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="564" y="930" width="240" height="110" as="geometry" />
+    </mxCell>
+    <mxCell id="cN2_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiNDOTQ1NDUiLz48cGF0aCBkPSJNMzIgMTBsMjIgNDBIMTB6IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMzIgMjZ2MTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxjaXJjbGUgY3g9IjMyIiBjeT0iNDQiIHI9IjIuNSIgZmlsbD0iI0ZGRkZGRiIvPjwvc3ZnPg==;" vertex="1" parent="1">
+      <mxGeometry x="571" y="974.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="eC2" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#C94545;strokeWidth=1.6;dashed=1;dashPattern=8 5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="cN1" target="cN2">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="cN3" value="Back-office queue&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;store manager notified&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#ECE9FB;strokeColor=#7A6BD6;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="826" y="930" width="240" height="110" as="geometry" />
+    </mxCell>
+    <mxCell id="cN3_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiM3QTZCRDYiLz48cmVjdCB4PSIxMCIgeT0iMjIiIHdpZHRoPSIxMiIgaGVpZ2h0PSIyMCIgcng9IjIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxyZWN0IHg9IjI2IiB5PSIyMiIgd2lkdGg9IjEyIiBoZWlnaHQ9IjIwIiByeD0iMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTQyIDMyaDEyTTQ4IDI2bDYgNi02IDYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==;" vertex="1" parent="1">
+      <mxGeometry x="833" y="974.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="eC3" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#C94545;strokeWidth=1.6;dashed=1;dashPattern=8 5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="cN2" target="cN3">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="cN4" value="Resolve&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;count · transfer in · write-off (each is a new ledger row)&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1088" y="930" width="240" height="110" as="geometry" />
+    </mxCell>
+    <mxCell id="cN4_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMzQjZGRDYiLz48cmVjdCB4PSIxMiIgeT0iMTIiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcng9IjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yMiAzMmw3IDcgMTQtMTUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==;" vertex="1" parent="1">
+      <mxGeometry x="1095" y="974.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="eC4" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=1.6;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="cN3" target="cN4">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="snap" value="Reading stock fast: snapshots&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:12px;margin-top:4px&quot;&gt;&lt;b&gt;on-hand = last snapshot + Σ movements since it&lt;/b&gt;&lt;br&gt;· snapshot taken nightly per store and item&lt;br&gt;· movements partitioned by month&lt;br&gt;· a read never sums the whole history&lt;br&gt;· a late offline movement just lands after the snapshot&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#E3F4F1;strokeColor=#1F8A7A;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=34;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1370" y="920" width="510" height="170" as="geometry" />
+    </mxCell>
+    <mxCell id="snap_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMxRjhBN0EiLz48ZWxsaXBzZSBjeD0iMzIiIGN5PSIyMCIgcng9IjE0IiByeT0iNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTE4IDIwdjI0YTE0IDUgMCAwIDAgMjggMFYyMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTE4IDMyYTE0IDUgMCAwIDAgMjggMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+;" vertex="1" parent="1">
+      <mxGeometry x="1378" y="928" width="22" height="22" as="geometry" />
+    </mxCell>
+
+    <!-- ===================== LEGEND ===================== -->
+    <mxCell id="lgL" value="" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#BBBBBB;strokeWidth=1.5;" vertex="1" parent="1">
+      <mxGeometry x="40" y="1124" width="480" height="118" as="geometry" />
+    </mxCell>
+    <mxCell id="lgLT" value="Lines" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="50" y="1128" width="100" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="lgL0" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#3B6FD6;strokeWidth=1.6;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="52" y="1168" as="sourcePoint" />
+        <mxPoint x="132" y="1168" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="lgLt0" value="sync push, till → cloud on reconnect" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#1A1A1A;fontSize=10;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="140" y="1157" width="360" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="lgL1" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#C94545;strokeWidth=1.6;dashed=1;dashPattern=8 5;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="52" y="1196" as="sourcePoint" />
+        <mxPoint x="132" y="1196" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="lgLt1" value="exception path" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#1A1A1A;fontSize=10;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="140" y="1185" width="360" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="lgL2" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=1.6;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="52" y="1224" as="sourcePoint" />
+        <mxPoint x="132" y="1224" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="lgLt2" value="next step" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#1A1A1A;fontSize=10;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="140" y="1213" width="360" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="lgNote" value="Rule (§2.2): stock is never edited directly, only added to as movements; the cloud recomputes on-hand. Tills never send a quantity." style="shape=note;whiteSpace=wrap;html=1;size=14;fillColor=#FFF8E6;strokeColor=#D9A13B;strokeWidth=1.5;fontColor=#1A1A1A;fontSize=13;align=left;verticalAlign=top;spacingLeft=10;spacingTop=6;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="560" y="1140" width="1320" height="60" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>

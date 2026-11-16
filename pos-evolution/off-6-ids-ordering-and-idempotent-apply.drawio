@@ -1,0 +1,282 @@
+<mxGraphModel dx="1920" dy="1140" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1140" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- ===================== TITLE + FRAME ===================== -->
+    <mxCell id="title" value="Offline-first · IDs, ordering and idempotent apply (Sync API)" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontColor=#1A1A1A;fontSize=26;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="100" y="14" width="1720" height="44" as="geometry" />
+    </mxCell>
+    <mxCell id="frame" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#BBBBBB;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="10" y="70" width="1900" height="1060" as="geometry" />
+    </mxCell>
+
+    <!-- ===================== LEFT · ENVELOPE ===================== -->
+    <mxCell id="bE" value="" style="rounded=1;arcSize=1;whiteSpace=wrap;html=1;fillColor=#FDFDFD;strokeColor=#1F8A7A;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="22" y="84" width="686" height="860" as="geometry" />
+    </mxCell>
+    <mxCell id="bE_t" value="A · Sync record envelope (one per change, written to the SQLite outbox)" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#1F8A7A;fontSize=13;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="34" y="92" width="662" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="fn0" value="tenantId" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E3F4F1;strokeColor=#1F8A7A;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;spacingLeft=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="128" width="190" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="fd0" value="routes the push to the tenant's shard" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1F8A7A;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;align=left;spacingLeft=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="230" y="128" width="460" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="fn1" value="storeId" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E3F4F1;strokeColor=#1F8A7A;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;spacingLeft=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="172" width="190" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="fd1" value="store that owns the till" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1F8A7A;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;align=left;spacingLeft=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="230" y="172" width="460" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="fn2" value="deviceId" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E3F4F1;strokeColor=#1F8A7A;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;spacingLeft=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="216" width="190" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="fd2" value="registered terminal (TerminalCode)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1F8A7A;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;align=left;spacingLeft=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="230" y="216" width="460" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="fn3" value="seq" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E3F4F1;strokeColor=#1F8A7A;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;spacingLeft=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="260" width="190" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="fd3" value="monotonic per device, never reused · gap detection" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1F8A7A;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;align=left;spacingLeft=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="230" y="260" width="460" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="fn4" value="batchId" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E3F4F1;strokeColor=#1F8A7A;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;spacingLeft=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="304" width="190" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="fd4" value="groups ≤ 200 records in one push, oldest first" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1F8A7A;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;align=left;spacingLeft=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="230" y="304" width="460" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="fn5" value="recordId" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E3F4F1;strokeColor=#1F8A7A;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;spacingLeft=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="348" width="190" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="fd5" value="ULID made on the till · CHAR(26) · sortable" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1F8A7A;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;align=left;spacingLeft=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="230" y="348" width="460" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="fn6" value="type / op" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E3F4F1;strokeColor=#1F8A7A;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;spacingLeft=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="392" width="190" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="fd6" value="Sale.Created, StockMovement.Added, Customer.Created …" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1F8A7A;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;align=left;spacingLeft=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="230" y="392" width="460" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="fn7" value="hlc" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E3F4F1;strokeColor=#1F8A7A;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;spacingLeft=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="436" width="190" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="fd7" value="hybrid logical clock: wall ms · counter · node" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1F8A7A;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;align=left;spacingLeft=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="230" y="436" width="460" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="fn8" value="businessDate" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E3F4F1;strokeColor=#1F8A7A;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;spacingLeft=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="480" width="190" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="fd8" value="from the till's open shift, not its clock" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1F8A7A;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;align=left;spacingLeft=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="230" y="480" width="460" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="fn9" value="payloadHash" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E3F4F1;strokeColor=#1F8A7A;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;spacingLeft=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="524" width="190" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="fd9" value="SHA-256 of the payload · detects corruption" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1F8A7A;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;align=left;spacingLeft=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="230" y="524" width="460" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="fn10" value="schemaVersion" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E3F4F1;strokeColor=#1F8A7A;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;spacingLeft=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="568" width="190" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="fd10" value="lets the server upcast records from old tills" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1F8A7A;strokeWidth=1.2;fontColor=#1A1A1A;fontSize=11;align=left;spacingLeft=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="230" y="568" width="460" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="rcpt" value="Receipt number: StoreCode-TerminalCode-Seq&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:12px;margin-top:4px&quot;&gt;e.g. &lt;b&gt;BLR012-T03-000417&lt;/b&gt;&lt;br&gt;Unique without any central coordination: each till owns its own sequence, so two offline tills can never issue the same number. Short enough to print and type at the returns desk.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#E2F4E4;strokeColor=#2E9E3E;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=34;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="628" width="650" height="140" as="geometry" />
+    </mxCell>
+    <mxCell id="rcpt_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMyRTlFM0UiLz48cmVjdCB4PSIxNiIgeT0iMTIiIHdpZHRoPSIzMiIgaGVpZ2h0PSI0MCIgcng9IjMiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yMyAyMmgxOE0yMyAzMWgxOE0yMyA0MGgxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+;" vertex="1" parent="1">
+      <mxGeometry x="48" y="636" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="pull" value="Pull (cloud → till)&lt;br&gt;&lt;div style=&quot;text-align:left;font-weight:normal;font-size:12px;margin-top:4px&quot;&gt;GET changes since the till's last &lt;b&gt;sync token&lt;/b&gt;, in pages of ≤ 500 · apply each page in one SQLite transaction, then save the new token · master data: the cloud always wins.&lt;/div&gt;" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=34;spacingTop=8;spacingRight=8;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="784" width="650" height="140" as="geometry" />
+    </mxCell>
+    <mxCell id="pull_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMzQjZGRDYiLz48cGF0aCBkPSJNNDYgMjZhMTUgMTUgMCAwIDAtMjctNE0xOCAzOGExNSAxNSAwIDAgMCAyNyA0IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMTkgMTN2OWg5TTQ1IDUxdi05aC05IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=;" vertex="1" parent="1">
+      <mxGeometry x="48" y="792" width="22" height="22" as="geometry" />
+    </mxCell>
+
+    <!-- ===================== RIGHT · APPLY FLOW ===================== -->
+    <mxCell id="bF" value="" style="rounded=1;arcSize=1;whiteSpace=wrap;html=1;fillColor=#FDFDFD;strokeColor=#3B6FD6;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="724" y="84" width="1174" height="860" as="geometry" />
+    </mxCell>
+    <mxCell id="bF_t" value="B · Server apply flow for a push" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#3B6FD6;fontSize=13;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="736" y="92" width="1150" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="s1" value="Receive batch&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;≤ 200 records, oldest first&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="860" y="124" width="380" height="56" as="geometry" />
+    </mxCell>
+    <mxCell id="s1_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMzQjZGRDYiLz48cmVjdCB4PSIxMCIgeT0iMjIiIHdpZHRoPSIxMiIgaGVpZ2h0PSIyMCIgcng9IjIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxyZWN0IHg9IjI2IiB5PSIyMiIgd2lkdGg9IjEyIiBoZWlnaHQ9IjIwIiByeD0iMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTQyIDMyaDEyTTQ4IDI2bDYgNi02IDYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==;" vertex="1" parent="1">
+      <mxGeometry x="867" y="141.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="d1" value="schemaVersion supported?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="890.0" y="210.0" width="320" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="s2" value="For each record, in seq order" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="860" y="304" width="380" height="46" as="geometry" />
+    </mxCell>
+    <mxCell id="s2_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMzQjZGRDYiLz48cGF0aCBkPSJNMTIgMjBoOE0xMiAzMmg4TTEyIDQ0aDgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yOCAyMGgyNE0yOCAzMmgyNE0yOCA0NGgyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjIuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+;" vertex="1" parent="1">
+      <mxGeometry x="867" y="316.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="d2" value="(deviceId, seq) already&lt;br&gt;in the inbox?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FCEBD9;strokeColor=#D9822B;strokeWidth=2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="890.0" y="370.0" width="320" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="d3" value="seq &gt; expected + 1?&lt;br&gt;(a gap)" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FCEBD9;strokeColor=#D9822B;strokeWidth=2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="890.0" y="470.0" width="320" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="s3" value="One DB transaction&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;apply change · insert inbox row · insert outbox events&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E2F4E4;strokeColor=#2E9E3E;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="860" y="578" width="380" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="s3_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMyRTlFM0UiLz48ZWxsaXBzZSBjeD0iMzIiIGN5PSIyMCIgcng9IjE0IiByeT0iNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTE4IDIwdjI0YTE0IDUgMCAwIDAgMjggMFYyMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTE4IDMyYTE0IDUgMCAwIDAgMjggMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+;" vertex="1" parent="1">
+      <mxGeometry x="867" y="602.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="d4" value="committed?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#E2F4E4;strokeColor=#2E9E3E;strokeWidth=2;fontColor=#1A1A1A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="890.0" y="677.0" width="320" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="s4" value="Ack OK · publish from outbox&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;relay sends events to Service Bus&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E2F4E4;strokeColor=#2E9E3E;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="860" y="776" width="380" height="56" as="geometry" />
+    </mxCell>
+    <mxCell id="s4_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMyRTlFM0UiLz48cGF0aCBkPSJNMTAgMjRoNDRNMTAgNDBoNDQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxjaXJjbGUgY3g9IjIwIiBjeT0iMzIiIHI9IjQiIGZpbGw9IiNGRkZGRkYiLz48Y2lyY2xlIGN4PSIzMiIgY3k9IjMyIiByPSI0IiBmaWxsPSIjRkZGRkZGIi8+PGNpcmNsZSBjeD0iNDQiIGN5PSIzMiIgcj0iNCIgZmlsbD0iI0ZGRkZGRiIvPjwvc3ZnPg==;" vertex="1" parent="1">
+      <mxGeometry x="867" y="793.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="s5" value="Return per-record acks&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;OK · DUPLICATE · REJECTED · high-water mark = last contiguous OK seq&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="860" y="858" width="380" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="s5_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMzQjZGRDYiLz48cGF0aCBkPSJNMTIgMTZoNDB2MjZIMzBsLTEwIDh2LThoLTh6IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMjAgMjZoMjRNMjAgMzNoMTYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==;" vertex="1" parent="1">
+      <mxGeometry x="867" y="882.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="r1" value="Reject batch&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;the till must update before it can sync&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1290" y="217" width="590" height="56" as="geometry" />
+    </mxCell>
+    <mxCell id="r1_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiNDOTQ1NDUiLz48cGF0aCBkPSJNMzIgMTBsMjIgNDBIMTB6IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMzIgMjZ2MTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxjaXJjbGUgY3g9IjMyIiBjeT0iNDQiIHI9IjIuNSIgZmlsbD0iI0ZGRkZGRiIvPjwvc3ZnPg==;" vertex="1" parent="1">
+      <mxGeometry x="1297" y="234.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="r2" value="Ack DUPLICATE&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;already applied · nothing changes (safe re-push)&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1F1F1;strokeColor=#8A8A8A;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1290" y="382" width="590" height="56" as="geometry" />
+    </mxCell>
+    <mxCell id="r3" value="Hold · request resend&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;from the expected seq; later records wait&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FCEBD9;strokeColor=#D9822B;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1290" y="482" width="590" height="56" as="geometry" />
+    </mxCell>
+    <mxCell id="r3_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiNEOTgyMkIiLz48cGF0aCBkPSJNNDYgMjZhMTUgMTUgMCAxIDAgMiAxMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTQ4IDE0djEySDM2IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=;" vertex="1" parent="1">
+      <mxGeometry x="1297" y="499.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="r4" value="Ack REJECTED&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;failure count + 1 · till retries on the next push&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1290" y="684" width="590" height="56" as="geometry" />
+    </mxCell>
+    <mxCell id="r5" value="&gt; 5 failures → quarantine&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;record parked · back office alerted · sync carries on&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1290" y="776" width="590" height="56" as="geometry" />
+    </mxCell>
+    <mxCell id="r5_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiNDOTQ1NDUiLz48cGF0aCBkPSJNMzIgMTBsMjIgNDBIMTB6IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMzIgMjZ2MTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxjaXJjbGUgY3g9IjMyIiBjeT0iNDQiIHI9IjIuNSIgZmlsbD0iI0ZGRkZGRiIvPjwvc3ZnPg==;" vertex="1" parent="1">
+      <mxGeometry x="1297" y="793.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="f1" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=1.6;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s1" target="d1">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="f2" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#2E9E3E;strokeWidth=1.6;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="d1" target="s2">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="y1" value="yes" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#2E9E3E;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1058" y="282" width="44" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="f3" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=1.6;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s2" target="d2">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="f4" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#2E9E3E;strokeWidth=1.6;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="d2" target="d3">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="y2" value="no" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#2E9E3E;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1058" y="450" width="44" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="f5" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#2E9E3E;strokeWidth=1.6;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="d3" target="s3">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="y3" value="no" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#2E9E3E;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1058" y="552" width="44" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="f6" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=1.6;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s3" target="d4">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="f7" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#2E9E3E;strokeWidth=1.6;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="d4" target="s4">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="y4" value="yes" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#2E9E3E;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1058" y="748" width="44" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="f8" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#333333;strokeWidth=1.6;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s4" target="s5">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="g1" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#C94545;strokeWidth=1.6;dashed=1;dashPattern=8 5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="d1" target="r1">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="n1" value="no" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#C94545;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1222" y="222" width="44" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="g2" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#8A8A8A;strokeWidth=1.6;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="d2" target="r2">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="n2" value="yes" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#8A8A8A;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1222" y="386" width="44" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="g3" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#C94545;strokeWidth=1.6;dashed=1;dashPattern=8 5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="d3" target="r3">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="n3" value="yes" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#D9822B;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1222" y="486" width="44" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="g4" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#C94545;strokeWidth=1.6;dashed=1;dashPattern=8 5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="d4" target="r4">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="n4" value="no" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#C94545;fontSize=11;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1222" y="688" width="44" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="g5" style="edgeStyle=none;html=1;rounded=1;endArrow=open;endSize=10;strokeColor=#C94545;strokeWidth=1.6;dashed=1;dashPattern=8 5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="r4" target="r5">
+      <mxGeometry relative="1" as="geometry">
+      </mxGeometry>
+    </mxCell>
+
+    <!-- ===================== BOTTOM · CLOCKS ===================== -->
+    <mxCell id="bC" value="" style="rounded=1;arcSize=1;whiteSpace=wrap;html=1;fillColor=#FDFDFD;strokeColor=#7A6BD6;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="22" y="960" width="1876" height="150" as="geometry" />
+    </mxCell>
+    <mxCell id="bC_t" value="C · Never trust the till's wall clock for ordering" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontColor=#7A6BD6;fontSize=13;fontStyle=1;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="34" y="968" width="1852" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="c0" value="receivedAt&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;the server stamps arrival time; used for SLAs and audit&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E1E9FB;strokeColor=#3B6FD6;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="40" y="1000" width="444" height="90" as="geometry" />
+    </mxCell>
+    <mxCell id="c0_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMzQjZGRDYiLz48Y2lyY2xlIGN4PSIzMiIgY3k9IjMyIiByPSIxNyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTMyIDIydjEwbDcgNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+;" vertex="1" parent="1">
+      <mxGeometry x="47" y="1034.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="c1" value="hlc&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;orders edits to the same record (e.g. customer profile, field by field)&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#ECE9FB;strokeColor=#7A6BD6;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="504" y="1000" width="444" height="90" as="geometry" />
+    </mxCell>
+    <mxCell id="c1_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiM3QTZCRDYiLz48cGF0aCBkPSJNMTIgMjBoOE0xMiAzMmg4TTEyIDQ0aDgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yOCAyMGgyNE0yOCAzMmgyNE0yOCA0NGgyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjIuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+;" vertex="1" parent="1">
+      <mxGeometry x="511" y="1034.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="c2" value="businessDate&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;comes from the open shift, so a sale at 23:59 stays on the right day&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E2F4E4;strokeColor=#2E9E3E;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="968" y="1000" width="444" height="90" as="geometry" />
+    </mxCell>
+    <mxCell id="c2_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMyRTlFM0UiLz48cmVjdCB4PSIxNiIgeT0iMTIiIHdpZHRoPSIzMiIgaGVpZ2h0PSI0MCIgcng9IjMiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yMyAyMmgxOE0yMyAzMWgxOE0yMyA0MGgxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+;" vertex="1" parent="1">
+      <mxGeometry x="975" y="1034.0" width="22" height="22" as="geometry" />
+    </mxCell>
+    <mxCell id="c3" value="skew > 5 min&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:11px;color:#444444&quot;&gt;device flagged on the dashboard; its records still apply (seq orders them)&lt;/span&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FBE3E3;strokeColor=#C94545;strokeWidth=1.8;fontColor=#1A1A1A;fontSize=12;fontStyle=1;verticalAlign=middle;spacingLeft=32;spacingRight=6;fontFamily=JetBrains Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DJetBrains%2BMono;" vertex="1" parent="1">
+      <mxGeometry x="1432" y="1000" width="444" height="90" as="geometry" />
+    </mxCell>
+    <mxCell id="c3_ic" value="" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiNDOTQ1NDUiLz48cGF0aCBkPSJNMzIgMTBsMjIgNDBIMTB6IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMzIgMjZ2MTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxjaXJjbGUgY3g9IjMyIiBjeT0iNDQiIHI9IjIuNSIgZmlsbD0iI0ZGRkZGRiIvPjwvc3ZnPg==;" vertex="1" parent="1">
+      <mxGeometry x="1439" y="1034.0" width="22" height="22" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>
